@@ -1,4 +1,6 @@
 <?php
 $list = array("odin", "dva", "tri", "chetire","puat");
-echo "$list";
+for ($i = 0; $i < count($list); $i++) {
+    echo $list[$i].'<br/>';
+    }
 ?>
