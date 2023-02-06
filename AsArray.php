@@ -3,6 +3,7 @@ $product = array("Чайник" => 500, "Сковородка" => 300, "Каст
 $product['Ложка'] = 50;
 $product['нож'] = 100;
 asort($product);
+ksort($product);
 foreach($product as $item => $item_count) {
     echo "Название продукта:" . $item . "  -Цена:" . $item_count.'<br/>';
    
