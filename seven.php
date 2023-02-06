@@ -4,15 +4,22 @@ echo <<<HTML
 <p> Студентка 3 курса фспо специальности " Информационные ситестемы и программирование"<br>
     Начальные знания HTML,CSS,PHP.<p>
 HTML;
-$n = 1000;
+$n = 100;
 
 $sum=0;
 $primer = array();
-//while(array_sum($primer)>$n){
-      for ($i = 0; $i < 10; $i++) {
-        $primer[$i] = rand(0, 100);
-        echo $primer[$i].'<br/>';
-        }
-  
-//}
+$number;
+do {
+
+    for ($i = 0; $i > count($primer);$i++) {
+        $number.rand(0, 50);
+        $primer = [$i];
+        $sum += $number;
+        echo $primer[$i] . '<br/>';
+
+    }
+}
+while ($sum <= $n);
+echo  "Sum : ".array_sum($primer);
+
 ?>
