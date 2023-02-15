@@ -5,7 +5,7 @@ echo <<<HTML
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <link rel="stylesheet" type="text/css">
   <title> Анкета программиста </title>
-  
+  <body>
   <h2><center>Анкета программиста</center></h2>
  
 <form name="form" action="anketa.php" method="post">
@@ -18,7 +18,7 @@ echo <<<HTML
 <p><input  name="name" type="text"> <br><br>
 
 <p><b>3.Дата рождения:</b></p>
-<p><input  name="name" type="date" value="2002-02-22"> <br><br>
+<p><input  name="data" type="date" value="2002-02-22"> <br><br>
 
 <p><b>4.Какие языки программирования вы знаете?</b></p>
 <input type="checkbox" name="language" value="1" >Java <br />
@@ -34,5 +34,7 @@ echo <<<HTML
 <input name="years" type="radio" value="2">3-5<br>
 <input name="years" type="radio" value="3">>5<br><br>
 <input type="submit" name="submit" value="Обработка">
+</body>
+</html>
 HTML;
 
