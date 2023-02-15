@@ -13,6 +13,9 @@ echo <<<HTML
     <input  type="submit" name="submit" value="Расчитать">
     </form>
 HTML;
-
+if(isset($_POST['submit'])){
+        $number1 = $_POST['number1'];
+        $number2 = $_POST['number2'];
+        $operation = $_POST['operation'];}
 
 ?>
